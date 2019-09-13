@@ -1,3 +1,6 @@
+#ifndef MONOPOLY_DEFINE_H
+#define MONOPOLY_DEFINE_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,12 +12,7 @@ typedef struct _PLAYER
     int player_id;
     char player_name[16];
     int pos;
-    int bomb_num;
-    int robot_num;
-    int block_num;
-    int sleep_time;
     int money;
-    int point;
     struct _PLAYER *next;
 }PLAYER;
 
@@ -29,7 +27,9 @@ typedef struct _GAME
 {
     int player_num;
     PLAYER *current_player;
-    PLAYER *player;
+    //PLAYER *player;
     char path[50];
-    MAP_UNIT map[70];
+    MAP_UNIT map_unit[70];
 }GAME_STATUS;
+
+#endif
