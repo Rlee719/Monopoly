@@ -1,0 +1,9 @@
+reset
+preset players QS
+preset where Q 68
+preset where S 0
+step 6
+preset nextplayer S
+step 4
+
+

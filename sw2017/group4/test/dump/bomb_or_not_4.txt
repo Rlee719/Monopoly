@@ -1,0 +1,17 @@
+bombs:
+blocks:
+
+id:1
+symbol:Q 
+loc:0 
+points:50
+fund:10000
+block:0
+bomb:0
+robot:0
+house_level_1:
+house_level_2:
+house_level_3:
+prision_cnt:0
+bless_cnt:0
+hospital_cnt:0

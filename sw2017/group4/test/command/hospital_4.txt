@@ -1,0 +1,2 @@
+reset
+preset hospital Q 1.5

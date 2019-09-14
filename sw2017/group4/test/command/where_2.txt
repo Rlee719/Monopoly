@@ -1,0 +1,2 @@
+reset
+preset where Q -1

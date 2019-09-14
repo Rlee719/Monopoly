@@ -19,6 +19,15 @@
     printf("\033[%d;%dH", y, x); \
 }while(0);
 
+#define CLEAN_GAME_FACE() do { \
+    for(int i = 0; i < 16; ++ i){ \
+        for(int j = START_X; j < 140; ++ j){ \
+            GOTOXY(j,i); \
+            printf(" "); \
+        } \
+    } \
+}while(0);
+
 typedef struct _PLAYER
 {
     int player_id;
@@ -32,6 +41,8 @@ typedef struct _PLAYER
     int point;
     struct _PLAYER *next;
 }PLAYER;
+
+typedef int player_id;
 
 typedef struct _MAP_UNIT
 {

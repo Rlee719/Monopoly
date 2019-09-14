@@ -1,0 +1,3 @@
+reset
+preset player Q
+preset points Q 0

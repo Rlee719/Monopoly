@@ -51,6 +51,7 @@ void goto_select_loc(int i){
 
 void display(GAME_STATUS *status)
 {
+    CLEAR_SCREEN();
     // set basic map
     int i = 0;
     for ( i = 0; i < ROW_COUNT; i++)

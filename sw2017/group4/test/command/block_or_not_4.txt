@@ -1,0 +1,3 @@
+reset
+preset players Q
+preset block_or_not 6.5

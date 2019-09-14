@@ -1,0 +1,1 @@
+Binary files ./result/Book1.txt and ./dump/Book1.txt differ

@@ -1,0 +1,63 @@
+# 接口与用例的统一v1.2
+
+*编写人：张志宇，刘羿，李勉*
+
+## 1 debug模式的命令
+
+```shell
+reset							   					#重置所有信息：地图复原，玩家资产，位置复原
+preset players [QASJ]       						#预置参与游戏的玩家
+preset where [QASJ] [0~69]							#设置某玩家的绝对位置
+preset points [QASJ] [0~50]							#设置某玩家的点数
+preset fund [QASJ] [1000~50000]						#设置某玩家的资金
+preset gift [block|bomb|robot] [QASJ] [0~10]		#设置某玩家拥有n个路障|炸弹|机器人
+preset loc [0~69] [QASJ] [0~3]						#设置位处loc的level级别的地皮归属player
+preset loc [0~69] NONE								#设置位处loc的为空地皮
+preset loc [0~69] [block|bomb]						#设置位处loc的为路障|炸弹
+preset status [prison|hospital|bless] [QASJ] [0~n]	#设置某玩家处于监狱|医院|财神赐福待n天
+preset nextplayer [QASJ]							#设置立即跳转到某玩家的回合
+step n												#设置当前玩家移动n步
+dump												#生成dump文件
+```
+
+
+
+## 2 Dump文件格式
+
+```shell
+#dump.txt
+id:1
+symbol:Q
+color:red
+loc:12					#玩家的绝对位置，loc from 0 to 69
+points:50
+fund:6000
+block:1
+bomb:0
+robot:0
+house_level_1:3,6,8		#该玩家拥有等级为1的地皮位置序列
+house_level_2:
+house_level_3:			#deault None
+prison_cnt:1			#在监狱剩余天,default 0
+bless_cnt:3				#财神剩余天数,default 0
+hospital_cnt:0			#医院剩余天数,default 0
+
+id:2
+symbol:A
+color:green
+loc:23
+points:50
+fund:6000
+block:1
+bomb:0
+robot:0
+house_level_1:3,6,8
+house_level_2:
+house_level_3:
+prison_cnt:1
+bless_cnt:3
+hospital_cnt:0
+
+#...maybe more players
+```
+
