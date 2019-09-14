@@ -5,8 +5,8 @@ void Start()
 
     while(1)
     {
-        display(game_status);
-        scanf("%s", command);
+        char *command;
+        command = get_command();
 
     }
 

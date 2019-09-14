@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "display.h": "c",
+        "define.h": "c"
+    }
+}
