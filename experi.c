@@ -7,6 +7,9 @@ void main()
 
 
     GAME_STATUS status;
+    PLAYER player;
+    status.current_player = &player;
+    
     display(&status);
     
     

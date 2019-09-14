@@ -1,0 +1,3 @@
+reset
+preset bomb S 0
+

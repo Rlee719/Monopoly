@@ -7,7 +7,13 @@
 #include <stdbool.h>
 #include <string.h>
 
+#define MAP_UNIT_COUNT
 
+#define QFR 1
+#define ATB 2
+#define SXM 3
+#define JBB 4
+#define NUL 0
 
 #define GOTOXY(x, y) do { \
     printf("\033[%d;%dH", y, x); \

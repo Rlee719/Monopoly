@@ -1,0 +1,4 @@
+reset
+preset bomb S 11
+
+
