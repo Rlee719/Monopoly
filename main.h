@@ -12,7 +12,7 @@
 #define PLAYER_MAX_NUM 4
 
 char command[COMMAND_SIZE];
-char name_list[4][20] = {"钱夫人", "阿土伯", "金贝贝", "孙小美"};
+char name_list[4][16] = {"钱夫人", "阿土伯", "金贝贝", "孙小美"};
 
 GAME_STATUS *game_status = NULL;
 void Start();
